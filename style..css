@@ -1,0 +1,105 @@
+body {
+
+    padding: none;
+    height: 100vh;
+    width: 100vw;
+    margin: none;
+    background-color: #3a4452;
+    align-items: center;
+
+}
+
+.container {
+
+    padding: 10px;
+    margin: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #29303a;
+    border-radius: 20px;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+
+button {
+
+    margin: 8px;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #3a4452;
+    box-shadow: -2px -2px 6px black;
+    background-color: rgb(255, 111, 0);
+}
+
+input {
+
+    padding: 15px;
+    width: 260px;
+    margin: 15px 15px 25px 15px;
+    text-align: right;
+    border: 2px solid white;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Trirong", serif;
+    background: transparent;
+    border: none;
+    box-shadow: -2px -2px 6px black, 2px 2px 6px black;
+    color: white;
+}
+
+input::placeholder {
+
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h3 {
+
+    text-align: right;
+    color: silver;
+    margin-right: 12px;
+    font-family: "Trirong", serif;
+}
+
+.oper {
+
+    background-color: #2ECC71;
+}
+
+button:hover {
+
+    animation: scale 0.09s linear 1;
+}
+
+@keyframes scale {
+
+    0% {
+
+        transform: scale(1.0);
+    }
+
+    50% {
+
+        transform: scale(0.9);
+    }
+
+    100% {
+
+        transform: scale(1.0);
+    }
+}
+
+.ac,
+.delete {
+
+    background-color: red;
+    color: white;
+}

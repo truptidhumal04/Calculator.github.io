@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  width: 100vw;
+  height: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(13, 3, 3);
+}
+
+.screen {
+  border-radius: 10px;
+  height: 10vh;
+  width: 100%;
+
+  color: rgb(9, 1, 1);
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.5rem;
+  margin-right: 1px;
+}
+
+
+
+.main-cal {
+  height: 60vh;
+  width: 25%;
+  background-color: rgb(194, 179, 204);
+  padding: 1rem;
+  border-radius: 20px;
+  border-style: double;
+}
+
+.numpad {
+
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+
+  color: black;
+  height: 50px;
+  width: 60px;
+
+
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  margin: 8px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.sub-btn {
+  color: black;
+  height: 50px;
+  width: 60px;
+
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  margin: 8px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 1.2rem;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.csss">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style..css">
+
+<body>
+
+    <div class="container">
+
+        <h3>calculator</h3>
+
+        <input type="text" placeholder="Trupti calculator" readonly id="result">
+        <br>
+        <button onclick="clearResult()" value="AC" class="ac">AC</button>
+        <button onclick="showDelete()" class="delete">DEL</button>
+        <button onclick="showOperators('*')" class="oper">×</button>
+        <button onclick="showOperators('/')" class="oper">÷</button>
+        <br>
+        <button onclick="show(1)">1</button>
+        <button onclick="show(2)">2</button>
+        <button onclick="show(3)">3</button>
+        <button onclick="showOperators('+')" class="oper">+</button>
+        <br>
+        <button onclick="show(4)">4</button>
+        <button onclick="show(5)">5</button>
+        <button onclick="show(6)">6</button>
+        <button onclick="showOperators('-')" class="oper">-</button>
+        <br>
+        <button onclick="show(7)">7</button>
+        <button onclick="show(8)">8</button>
+        <button onclick="show(9)">9</button>
+        <button onclick="showOperators(Math.sqrt(result.value))" class="oper">√</button><br>
+        <button onclick="show('00')">00</button>
+        <button onclick="show('0')">0</button>
+        <button onclick="show('.')">.</button>
+        <button onclick="calc()" class="oper">=</button>
+
+    </div>
+
+    <script>
+        var result = document.getElementById("result");
+
+        function show(number) {
+
+            result.value += number;
+        }
+
+        function showOperators(operator) {
+
+            result.value += operator;
+        }
+
+        function calc() {
+
+            result.value = eval(result.value);
+        }
+
+        function clearResult() {
+
+            result.value = "";
+        }
+
+        function showOperators1(operator) {
+
+            result.value += operator;
+
+            result = result.value * 1 / 2;
+        }
+
+        function showDelete() {
+
+            var del = result.value;
+            result.value = del.substring(0, del.length - 1);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
